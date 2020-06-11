@@ -1,4 +1,4 @@
-package com.shm;
+package com.shm.sort;
 
 /**
  *

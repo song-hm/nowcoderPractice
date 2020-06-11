@@ -1,4 +1,4 @@
-package com.shm;
+package com.shm.sort;
 
 public abstract class Sort<T extends Comparable<T>> {
     public abstract void sort(T[] nums);

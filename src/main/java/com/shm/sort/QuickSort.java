@@ -1,6 +1,5 @@
-package com.shm;
+package com.shm.sort;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
