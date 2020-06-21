@@ -30,7 +30,6 @@ public class SequenceSum {
          *
          * 这题就是通过差值为1的等差数列求解，通过等差数列基本公式的推导可以得到等差数列首项a1 = (2N - (L-1)L) / (2 * N)，而L的值是不能大于100的，所以可以直接求解L——100间有没有整数a1解，有的话直接输出就好了，超过100，直接输出No，注意输出的行末不能带有空格
          */
-
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int L = sc.nextInt();
