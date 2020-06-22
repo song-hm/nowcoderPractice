@@ -12,7 +12,7 @@ public class HeapSort<T extends Comparable<T>> extends Sort<T> {
     public void sort(T[] nums) {
         int N = nums.length - 1;
 
-        // 构建堆
+        // 构建堆(大顶堆）
         //无序数组建立堆最直接的方法是从左到右遍历数组进行上浮操作。一个更高效的方法是从右至左进行下沉操作，如果
         //一个节点的两个节点都已经是堆有序，那么进行下沉操作可以使得这个节点为根节点的堆有序。叶子节点不需要进行
         //下沉操作，可以忽略叶子节点的元素，因此只需要遍历一半的元素即可。
