@@ -42,10 +42,28 @@ public class App
 //        };
 //        t2.start();
 
+        String s1 = "hello";
+//        if (s1 == "hello"){
+//            System.out.println("s1 = \"hello\" ");
+//        }else {
+//            System.out.println("s1 !=hello ");
+//        }
 
-        int[] array = new int[]{5,3,8,6,9,2,1,7};
-        sort(array);
-        System.out.println(Arrays.toString(array));
+        String s2 = "hello";
+        String c = new String("join us");
+        String d = "join us";
+        String e = c.intern();
+//        System.out.println(String.format("%b %b %b %b %b",s1 == s2,c==d,c.equals(d),c==e,d==e));
+
+        int x=3,y=6,a=0;
+        while (x++!=(y-=1)){
+            a+=1;
+            if (y<x) break;
+        }
+        System.out.println(""+x+y+a);
+//        int[] array = new int[]{5,3,8,6,9,2,1,7};
+//        sort(array);
+//        System.out.println(Arrays.toString(array));
     }
 
     static void sort(int[] arr){
