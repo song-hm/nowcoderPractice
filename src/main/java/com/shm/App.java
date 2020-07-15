@@ -12,7 +12,9 @@ public class App
 {
     public static void main(String[] args) throws Exception
     {
-
+        String s = "fdasgdsgfsdgfd hsdyfgdsh";
+        String[] s3 = s.split(" ");
+        String s4 = s3[1];
 //        Multiply multiply = new Multiply();
 //        System.out.println( "Hello World!" );
 

@@ -11,8 +11,8 @@ public class MergeSort {
 
     public static void main(String[] args) {
         int[] array = new int[]{5, 3, 8, 6, 9, 2, 1, 7};
-//        Up2DownMergeSort(array);
-        Down2UpMergeSort(array);
+        Up2DownMergeSort(array);
+//        Down2UpMergeSort(array);
         System.out.println(Arrays.toString(array));
 //        System.out.println(count);
     }
