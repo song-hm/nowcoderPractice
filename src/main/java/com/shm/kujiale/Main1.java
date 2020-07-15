@@ -23,7 +23,7 @@ public class Main1 {
             }
             if ("sell".equals(split[0])){
                 if (Integer.parseInt(split[1])<1||Integer.parseInt(split[2])<1||Integer.parseInt(split[1])>=x ||Integer.parseInt(split[1])>=y){
-                    System.out.println("你选择的座位的座位不存在");
+                    System.out.println("你选择的座位不存在");
                 }else {
                     Pair p = new Pair(Integer.parseInt(split[1])-1, Integer.parseInt(split[2])-1);
                     if (set.contains(p)){
@@ -51,14 +51,21 @@ public class Main1 {
             }
             if ("listorder".equals(str)){
                 Set<Date> dates = map.keySet();
-                ArrayList list = new ArrayList();
-                for (Date date : dates) {
-                    list.add(date);
-                }
+
+                //                for (Date date : dates) {
+//                    list.add(date);
+//                }
+
+//                list.addAll(dates);
+
+                ArrayList<Date> list = new ArrayList<>(dates);
                 Collections.sort(list);
-                for (Object o : list) {
-                    System.out.println(new Date(o.toString()).toLocaleString()+" row "+map.get(o).getKey()+" column "+map.get(o).getValue());
+                for (Date date : list) {
+                    System.out.println(date.toLocaleString()+" row "+map.get(date).getKey()+" column "+map.get(date).getValue());
                 }
+//                for (Object o : list) {
+//                    System.out.println(new Date(o.toString()).toLocaleString()+" row "+map.get(o).getKey()+" column "+map.get(o).getValue());
+//                }
             }
         }
     }
