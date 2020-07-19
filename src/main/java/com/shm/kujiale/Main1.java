@@ -25,7 +25,7 @@ public class Main1 {
                 if (Integer.parseInt(split[1])<1||Integer.parseInt(split[2])<1||Integer.parseInt(split[1])>=x ||Integer.parseInt(split[1])>=y){
                     System.out.println("你选择的座位不存在");
                 }else {
-                    Pair p = new Pair(Integer.parseInt(split[1])-1, Integer.parseInt(split[2])-1);
+                    Pair p = new Pair(Integer.parseInt(split[1]), Integer.parseInt(split[2]));
                     if (set.contains(p)){
                         System.out.println("当前座位已售出");
                     }else {
@@ -36,8 +36,8 @@ public class Main1 {
                 }
             }
             if ("print".equals(str)){
-                for (int i = 0; i < x; i++) {
-                    for (int j = 0; j < y; j++) {
+                for (int i = 1; i <= x; i++) {
+                    for (int j = 1; j <= y; j++) {
                         for (Pair<Integer, Integer> p : set) {
                             if (p.getKey()==i&&p.getValue()==j){
                                 System.out.print("X");
